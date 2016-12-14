@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'Note this';
+    src: url('../fonts/Note_this.ttf');
+}
+
+@font-face {
+    font-family: 'Aaargh';
+    src: url('../fonts/Aaargh.ttf');
+}
+
+@font-face {
+    font-family: 'SourceCodePro-Light';
+    src: url('../fonts/SourceCodePro-Light.otf');
+}
+
+body{
+    font-size: 16px;
+}
+
+.cutedb{
+    font-family: 'Note this';
+    margin-left:20px;
+    padding-top: 15px;
+    font-size: xx-large;
+}
+
+
+
+.cutedb-navbar {
+    padding : 0;
+}
