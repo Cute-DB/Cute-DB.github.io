@@ -24,8 +24,22 @@ body{
     font-size: xx-large;
 }
 
-
-
 .cutedb-navbar {
     padding : 0;
+}
+
+.bottom-buffer-20 {
+    padding-bottom: 20px;
+}
+
+.bottom-buffer-50 {
+    padding-bottom: 20px;
+}
+
+.legend {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.42857143;
+    color: #333;
+    text-shadow: none;
 }

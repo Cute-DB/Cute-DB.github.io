@@ -31,10 +31,10 @@
 
 <!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-static-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-static-top cutedb-navbar" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top cutedb-navbar" role="navigation">
     <div class="container">
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -54,10 +54,10 @@
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#about">About</a>
+                    <a class="page-scroll" href="#features">Features</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Services</a>
+                    <a class="page-scroll" href="#about">About</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -82,17 +82,22 @@
 </section>
 
 <!-- Intro Section -->
-<section id="reports" class="section-grey">
+<section id="features" class="section-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <h1>User friendly lints reports</h1>
+                <div class="row bottom-buffer-20">
+                    <p>Cute-DB was born from the need to regularly check our databases and thus to consult more easily the reports produced by the tool we use: Schemacrawler.</p>
+                </div>
                 <div class="row">
-                    <div class="col-lg-5">
-                        <img src="images/schemacrawler.png" width="90%"/>
+                    <div class="col-lg-6">
+                        <p><strong>Former Schemacrawler report</strong></p>
+                        <img src="images/schemacrawler_3.png" />
                     </div>
-                    <div class="col-lg-7">
-                        <img src="images/cutedb.png" width="90%"/>
+                    <div class="col-lg-6 " >
+                        <p><strong>Cute-DB report</strong></p>
+                        <img src="images/cutedb_32.png" />
                     </div>
                 </div>
             </div>
@@ -101,17 +106,17 @@
 </section>
 
 <!-- Intro Section -->
-<section id="indicators" class="section-white">
+<section id="indicators" class="section-grey">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-                <h1>Indicators</h1>
+            <div class="col-lg-12 ">
+                <h1 class="bottom-buffer-50">Indicators</h1>
                 <div class="row">
                     <div class="col-lg-3 col-xs-12">
-                        <div class="row">
-                            <p>Run status</p>
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Run status</strong></p>
                         </div>
-                        <div class="row">
+                        <div class="row bottom-buffer-20">
                             <img src="images/build_badge.png" />
                         </div>
                         <div class="row">
@@ -119,10 +124,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-xs-12 col-lg-offset-1">
-                        <div class="row">
-                            <p>Quality rate</p>
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Quality rate</strong></p>
                         </div>
-                        <div class="row">
+                        <div class="row bottom-buffer-20">
                             <img src="images/rating_badge.png"/>
                         </div>
                         <div class="row">
@@ -130,10 +135,10 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-xs-12 col-lg-offset-1">
-                        <div class="row">
-                            <p>Weighted quality score</p>
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Weighted quality score</strong></p>
                         </div>
-                        <div class="row">
+                        <div class="row bottom-buffer-20">
                             <img src="images/score_badge.png"/>
                         </div>
                         <div class="row">
@@ -148,7 +153,7 @@
 </section>
 
 <!-- Intro Section -->
-<section id="dashboard" class="section-grey">
+<section id="dashboard" class="section-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -171,6 +176,7 @@
                         <div class="item active">
                             <div class="carousel-caption">
                                 <img src="images/donutchart.png" />
+                                <p  class="legend">See lints repartition by severity at database level.</p>
                             </div>
                         </div><!-- /.item -->
 
@@ -178,6 +184,7 @@
                         <div class="item">
                             <div class="carousel-caption">
                                 <img src="images/barchart.png"/>
+                                <p class="legend">See lints repartition by severity at table level.</p>
                             </div>
                         </div><!-- /.item -->
 
@@ -208,54 +215,40 @@
 </section>
 
 <!-- About Section -->
-<section id="about" class="section-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Set your requirements</h1>
-                <p>
-                    Thanks to our Schemacrawler plugin use embedded best practices checks or set your own requirements.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Services Section -->
-<section id="services" class="section-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>See your stats</h1>
-                <p>
-
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="about" class="section-white">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Set your requirements</h1>-->
+                <!--<p>-->
+                    <!--Thanks to our Schemacrawler plugin use embedded best practices checking or set your own requirements.-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <!-- Contact Section -->
-<section id="contact" class="section-white">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Inspect your results</h1>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="contact" class="section-white">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Inspect your results</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <!-- Contact Section -->
-<section id="contact" class="section-grey">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <h1>Act</h1>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="contact" class="section-grey">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Act</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
