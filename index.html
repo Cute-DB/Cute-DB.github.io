@@ -1,1 +1,266 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Cute-DB</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top cutedb-navbar" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll cutedb" href="#page-top">Cute-DB</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse ">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Intro Section -->
+<section id="intro" class="section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="cutedb">Cute-DB</h1>
+                <p><strong>helps you to track your database quality over time, and ensure that your database fits your requirements.</strong></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section id="features" class="section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>User friendly lints reports</h1>
+                <div class="row bottom-buffer-20">
+                    <p>Cute-DB was born from the need to regularly check our databases and thus to consult more easily the reports produced by the tool we use: Schemacrawler.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><strong>Former Schemacrawler report</strong></p>
+                        <img src="images/schemacrawler_3.png" />
+                    </div>
+                    <div class="col-lg-6 " >
+                        <p><strong>Cute-DB report</strong></p>
+                        <img src="images/cutedb_32.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section id="indicators" class="section-grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 ">
+                <h1 class="bottom-buffer-50">Indicators</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-xs-12">
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Run status</strong></p>
+                        </div>
+                        <div class="row bottom-buffer-20">
+                            <img src="images/build_badge.png" />
+                        </div>
+                        <div class="row">
+                            <p class="text-justify">Show the Cute-DB run status.  Can be SUCCESS, PENDING, RUNNING or even FAILURE if the database really doesn't fit your requirements.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-lg-offset-1">
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Quality rate</strong></p>
+                        </div>
+                        <div class="row bottom-buffer-20">
+                            <img src="images/rating_badge.png"/>
+                        </div>
+                        <div class="row">
+                            <p class="text-justify">From 0 to 5 stars. 5 stars means no lint detected, 4 star : only low severity lints have been detected, 3 stars : medium severity lints have been dectected, etc... </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 col-lg-offset-1">
+                        <div class="row bottom-buffer-20">
+                            <p><strong>Weighted quality score</strong></p>
+                        </div>
+                        <div class="row bottom-buffer-20">
+                            <img src="images/score_badge.png"/>
+                        </div>
+                        <div class="row">
+                            <p class="text-justify">From 0 to 100, from red to green.  The higher is the score the better is the database quality.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Intro Section -->
+<section id="dashboard" class="section-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Dashboard</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="carousel-dashboard" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-dashboard" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-dashboard" data-slide-to="1"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <!-- First slide -->
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <img src="images/donutchart.png" />
+                                <p  class="legend">See lints repartition by severity at database level.</p>
+                            </div>
+                        </div><!-- /.item -->
+
+                        <!-- Second slide -->
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <img src="images/barchart.png"/>
+                                <p class="legend">See lints repartition by severity at table level.</p>
+                            </div>
+                        </div><!-- /.item -->
+
+                    </div><!-- /.carousel-inner -->
+
+                </div><!-- /.carousel -->
+            </div>
+        </div>
+
+
+
+
+
+        <!--<div class="row">-->
+        <!--<div class="col-lg-12">-->
+        <!--<h1>Dashboard</h1>-->
+        <!--<div class="row">-->
+        <!--<div class="col-lg-5">-->
+        <!--<img src="images/donutchart.png" />-->
+        <!--</div>-->
+        <!--<div class="col-lg-7">-->
+        <!--<img src="images/barchart.png"/>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+</section>
+
+<!-- About Section -->
+<!--<section id="about" class="section-white">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Set your requirements</h1>-->
+                <!--<p>-->
+                    <!--Thanks to our Schemacrawler plugin use embedded best practices checking or set your own requirements.-->
+                <!--</p>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!-- Contact Section -->
+<!--<section id="contact" class="section-white">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Inspect your results</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!-- Contact Section -->
+<!--<section id="contact" class="section-grey">-->
+    <!--<div class="container">-->
+        <!--<div class="row">-->
+            <!--<div class="col-lg-12">-->
+                <!--<h1>Act</h1>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Scrolling Nav JavaScript -->
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/scrolling-nav.js"></script>
+<script src="js/carousel.js"></script>
+
+</body>
+
+</html>
